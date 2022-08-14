@@ -2,10 +2,10 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_main"
-    app:startDestination="@id/FRFirstPage">
+    app:startDestination="@id/FRGithubRepoListing">
 
     <fragment
-        android:id="@+id/FRFirstPage"
-        android:name="com.bkarakoca.githubrepolisting.scene.first.FRFirstPage"
-        android:label="FRFirstPage" />
+        android:id="@+id/FRGithubRepoListing"
+        android:name="com.bkarakoca.ui_repo_listing.scene.repolist.FRGithubRepoListing"
+        android:label="FRGithubRepoListing" />
 </navigation>

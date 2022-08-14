@@ -3,8 +3,8 @@ package com.bkarakoca.githubrepolisting.internal.injection.module
 import android.app.Application
 import android.content.SharedPreferences
 import androidx.preference.PreferenceManager
-import com.bkarakoca.githubrepolisting.internal.util.ResourceProvider
-import com.bkarakoca.githubrepolisting.internal.util.ResourceProviderImpl
+import com.bkarakoca.core.util.ResourceProvider
+import com.bkarakoca.core.util.ResourceProviderImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

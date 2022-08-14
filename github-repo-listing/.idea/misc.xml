@@ -21,7 +21,11 @@
         <entry key="app/src/main/res/layout/item_restaurant_section_empty.xml" value="0.18885869565217392" />
         <entry key="app/src/main/res/layout/view_text_with_icon.xml" value="0.18885869565217392" />
         <entry key="app/src/main/res/layout/view_text_with_small_image.xml" value="0.18885869565217392" />
+        <entry key="core/src/main/res/layout/fragment_example.xml" value="0.14447463768115942" />
         <entry key="core/src/main/res/layout/item_list.xml" value="0.1" />
+        <entry key="ui-repo-listing/src/main/res/layout/fragment_first_page.xml" value="0.14447463768115942" />
+        <entry key="ui-repo-listing/src/main/res/layout/fragment_github_repo_listing.xml" value="0.14447463768115942" />
+        <entry key="ui-repo-listing/src/main/res/layout/item_github_repository.xml" value="0.335" />
       </map>
     </option>
   </component>

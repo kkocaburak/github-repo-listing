@@ -60,7 +60,6 @@ ext {
                     "com.github.mrmike:ok2curl:0.7.0",
                     "com.google.code.gson:gson:2.8.7",
                     "com.squareup.retrofit2:converter-gson:2.7.0",
-
             ],
 
             commonTest = [

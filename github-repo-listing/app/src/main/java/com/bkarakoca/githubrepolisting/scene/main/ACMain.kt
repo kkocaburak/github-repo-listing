@@ -3,7 +3,7 @@ package com.bkarakoca.githubrepolisting.scene.main
 import android.os.Bundle
 import androidx.activity.viewModels
 import com.bkarakoca.githubrepolisting.R
-import com.bkarakoca.githubrepolisting.base.BaseActivity
+import com.bkarakoca.core.base.BaseActivity
 import com.bkarakoca.githubrepolisting.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
