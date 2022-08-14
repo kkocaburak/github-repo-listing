@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@{item.hasWiki == true ? @color/purple_200 : @color/teal_700}"
+        android:padding="@dimen/padding_medium"
         android:layout_margin="@dimen/margin_medium">
 
         <TextView

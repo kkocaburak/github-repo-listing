@@ -1,7 +1,6 @@
 package com.bkarakoca.data.api
 
 import com.bkarakoca.data.model.GithubRepoResponseModel
-import kotlinx.coroutines.flow.Flow
 import retrofit2.http.GET
 import retrofit2.http.Query
 

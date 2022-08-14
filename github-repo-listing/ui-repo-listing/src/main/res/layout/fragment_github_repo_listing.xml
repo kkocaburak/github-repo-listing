@@ -14,6 +14,7 @@
         android:layout_height="match_parent">
 
         <EditText
+            style="Text_Bebas"
             android:id="@+id/repo_listing_edit_text_username"
             app:layout_constraintTop_toTopOf="parent"
             android:hint="@string/github_repo_list_username_hint"

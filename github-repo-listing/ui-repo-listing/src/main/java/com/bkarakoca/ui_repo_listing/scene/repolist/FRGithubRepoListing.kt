@@ -19,11 +19,14 @@ class FRGithubRepoListing : BaseFragment<FRGithubRepoListingVM, FragmentGithubRe
     lateinit var adapterRepoList: AdapterRepoList
 
     override fun initialize() {
-        viewModel.fetchRepoList("tetris") // TODO : change
         binder.repoListingRecyclerview.adapter = adapterRepoList
     }
 
-    override fun setListeners() {}
+    override fun setListeners() {
+        binder.repoListingButtonSubmit.setOnClickListener {
+            viewModel.fetchRepoList(binder.repoListingEditTextUsername.text.toString())
+        }
+    }
 
     override fun setReceivers() {
         observe(viewModel.githubRepoListUIModel) {

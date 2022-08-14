@@ -26,19 +26,6 @@ abstract class BaseViewModel : ViewModel() {
     private val _navigation = MutableLiveData<Event<NavigationCommand>>()
     val navigation: LiveData<Event<NavigationCommand>> get() = _navigation
 
-    protected open fun showErrorPopupWithBackAction(message: String) {
-        _navigation.value = Event(
-            NavigationCommand.Popup(
-                PopupModel(
-                    message = message
-                ),
-                PopupListener(
-                    onPositiveButtonClick = { navigateBack() }
-                )
-            )
-        )
-    }
-
     protected open fun showPopup(message: String) {
         _popup.value = Event(PopupModel(message = message))
     }

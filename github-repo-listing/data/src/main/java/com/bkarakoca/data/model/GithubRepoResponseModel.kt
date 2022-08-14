@@ -12,5 +12,5 @@ data class RepoItems(
 )
 
 data class OwnerModel(
-    val name: String? = null
+    val login: String? = null
 )
