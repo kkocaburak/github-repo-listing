@@ -1,0 +1,6 @@
+rootProject.name = "GithubRepoListingApp"
+include ':app'
+include ':domain'
+include ':data'
+include ':ui-repo-listing'
+include ':core'

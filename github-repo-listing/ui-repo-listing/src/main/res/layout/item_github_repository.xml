@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.bkarakoca.domain.uimodel.GithubRepoUIModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@{item.hasWiki == true ? @color/purple_200 : @color/teal_700}"
+        android:padding="@dimen/padding_medium"
+        android:layout_margin="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/item_github_repository_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@{item.repositoryName}"
+            tools:text="android-example-repository" />
+
+        <TextView
+            android:id="@+id/item_github_repository_text_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xx_small"
+            android:text="@{item.username}"
+            app:layout_constraintTop_toBottomOf="@+id/item_github_repository_text_name"
+            tools:text="Tetris" />
+
+        <TextView
+            android:id="@+id/item_github_repository_text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{item.repositoryCount}"
+            android:layout_marginTop="@dimen/margin_xx_small"
+            app:layout_constraintTop_toBottomOf="@+id/item_github_repository_text_user"
+            tools:text="15" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
