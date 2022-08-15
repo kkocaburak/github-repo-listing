@@ -1,8 +1,6 @@
 package com.bkarakoca.githubrepolisting.internal.injection.module
 
-import com.bkarakoca.githubrepolisting.internal.util.NetworkStateHolder
-import com.bkarakoca.githubrepolisting.internal.util.ResourceProvider
-import com.bkarakoca.githubrepolisting.internal.util.api.ErrorHandlingInterceptor
+import com.bkarakoca.githubrepolisting.BuildConfig
 import com.google.gson.Gson
 import dagger.Lazy
 import dagger.Module
@@ -33,14 +31,12 @@ internal class NetworkModule {
     @Provides
     @Singleton
     fun provideOkHttpClient(
-        loggingInterceptor: HttpLoggingInterceptor,
-        resourceProvider: ResourceProvider
+        loggingInterceptor: HttpLoggingInterceptor
     ): OkHttpClient {
         val httpClient = OkHttpClient.Builder()
             .connectTimeout(CLIENT_TIME_OUT_SEC, TimeUnit.SECONDS)
             .readTimeout(CLIENT_TIME_OUT_SEC, TimeUnit.SECONDS)
             .addInterceptor(loggingInterceptor)
-            .addInterceptor(ErrorHandlingInterceptor(NetworkStateHolder, resourceProvider))
 
         return httpClient.build()
     }
@@ -55,6 +51,7 @@ internal class NetworkModule {
     @Singleton
     fun provideRetrofit(client: Lazy<OkHttpClient>, gson: Gson): Retrofit {
         return Retrofit.Builder()
+            .baseUrl(BuildConfig.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create(gson))
             .callFactory { client.get().newCall(it) }
             .build()
