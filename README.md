@@ -1,14 +1,11 @@
-# Example App
-** App Description **
-
-<img src="/assets/resource1" width="260"> | <img src="/assets/resource2" width="260"> | <img src="/assets/resource3" width="260">
+# Github Repository Listing App
 
 ## Architecture
 
 - Single Activity
-- MVVM Pattern
-- Clean Code
-- Repository Pattern
+- MVVM Structure
+- Clean Code Architecture
+- Multi Modular Architecture
 
 **View:** Renders UI and delegates user actions to ViewModel
 
@@ -31,14 +28,8 @@
 - **[Dagger-Hilt](https://developer.android.com/training/dependency-injection/hilt-android):** Dependency injector
 - **[Coroutines](https://github.com/Kotlin/kotlinx.coroutines):** Asynchronous programming
 - **[Kotlin-Flow](https://developer.android.com/kotlin/flow):** Asynchronous programming
-- **[Room](https://developer.android.com/jetpack/androidx/releases/room):** Local database
 - **[Retrofit](https://github.com/square/retrofit):** Type safe HTTP client
 - **[GSON](https://github.com/google/gson):** JSON serializer/deserializer
-- **[MockK](https://mockk.io/ANDROID.html):** Unit test
-
-## Unit Test
-
-One of the benefits of using MVVM design pattern is unit testing. With single responsibility classes we can easily create unit test class. In the project, we have example unit test classes for viewmodel, usecase, repository etc. 
 
 
 ## License
@@ -58,4 +49,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-1
